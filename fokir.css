@@ -1,0 +1,681 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 16px;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+}
+
+.container {
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+.clr{
+    clear: both;
+}
+
+.btn{
+    padding: 10px;
+    color: white;
+    text-transform: capitalize;
+    background-color: #ff305b;
+}
+
+
+.sec-1{
+    background-image: url(imgs/slider-02.jpg);
+    background-position: center center;
+    background-repeat: repeat;
+    background-size: cover;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: overlay;
+    height: 100vh;
+}
+.sec-1 .container .nav{
+    /* background-color: brown; */
+    text-align: center;
+    margin-bottom: 140px;
+    padding-top: 10px;
+}
+.sec-1 .container .nav h2{
+    /* background-color: violet; */
+    font-size: 25px;
+    margin-bottom: 15px;
+    color: #ff305b;
+    
+}
+.sec-1 .container .nav .links{
+    /* background-color: blue; */
+    font-size: 13px;
+    margin-bottom: 50px;
+
+}
+.sec-1 .container .nav .links a{
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+}
+.sec-1 .container .nav .links a:hover{
+    color: #ff305b;
+    transition-property: color;
+    transition-duration: 0.5s
+}
+.sec-1 .container .content{
+    /* background-color: aqua; */
+    color: white;
+    text-align: center;
+    padding-bottom: 200px;
+}
+.sec-1 .container .content h2{
+    /* background-color: red; */
+    margin-bottom: 10px;
+}
+.sec-1 .container .content h1{
+    /* background-color: darkblue; */
+    margin-bottom: 10px;
+    color: #ff305b;
+
+}
+.sec-1 .container .content p{
+    /* background-color: goldenrod; */
+    font-size: 20px;
+    font-weight: 500;
+    border-right: white solid 2px;
+    padding-right: 8px;
+    width: fit-content;
+    margin: auto;
+}
+
+.sec-2{
+    padding: 40px;    
+}
+.sec-2 .container .pic{
+    /* background-color: #ff305b; */
+    margin-bottom: 15px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+}
+.sec-2 .container .pic img{
+    width: 100%;
+}
+
+.pop-up{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+    top: 100%;
+}
+
+.sec-2 .container .pic:hover .pop-up{
+    top: 0;
+}
+
+.pop-up .center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.pop-up span{
+    margin-right: 15px;
+
+}
+
+.sec-2 .container .text .up{
+    /* background-color: brown; */
+    border-bottom: 1px black dashed;
+}
+.sec-2 .container .text .up h2{
+    margin-bottom: 15px;
+}
+.sec-2 .container .text .up p{
+    line-height: 25px;
+    color: #555555;
+    padding-bottom: 25px;
+}
+
+.sec-2 .container .text .down{
+    /* background-color: green; */
+    padding: 15px 0;
+    margin-bottom: 50px;
+}
+.sec-2 .container .text .down p{
+        /* background-color: #ff305b; */
+        padding: 10px 0;
+        color: #555555;
+}
+.sec-2 .container .text .down button{
+        background-color: #ff305b;
+        padding: 15px 25px;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        margin-top: 10px;
+        font-size: 17px;
+        margin-right: 10px;
+
+}
+.sec-2 .container .text .down button i{
+    margin-right: 7px;
+}
+
+.sec-3{
+    margin-bottom: 30px;
+    background-color: #eee;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.sec-3 .container h2{
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+.lines{
+    border-top: 1px solid #ff305b;
+    border-bottom: 1px solid #ff305b;
+    height: 11px;
+    width: 70px;
+    margin: 0 auto 30px;
+    position: relative;
+    /* background-color: aquamarine; */
+}
+.lines .h-r{
+    background-color: #ff305b;
+    height: 1px;
+    width: 180px;
+    margin: auto;
+    position: absolute;
+    top: 4px;
+    left: -56px;
+}
+.sec-3 .container .serv{
+    text-align: center;
+    /* background-color: #ff305b; */
+}
+.sec-3 .container .serv div{
+    /* background-color: #ff305b; */
+    margin: 40px 0;
+    padding: 20px;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+}
+.sec-3 .container .serv div:hover{
+    background-color: white;
+    box-shadow: 10px 10px 5px #aaaaaa;
+}
+.sec-3 .container .serv div:hover i{
+    transform: scale(1.4);
+}
+.sec-3 .container .serv div i{
+    font-size: 25px;
+    margin-bottom: 15px;
+    color: #ff305b;
+    transition-property: transform;
+    transition-duration: 0.5s;
+}
+.sec-3 .container .serv div h3{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.sec-3 .container .serv div p{
+    color: #555555;
+}
+
+
+.sec-4{
+    padding-bottom: 40px;
+}
+.sec-4 .container h2{
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 32px;
+}
+.sec-4 .container .cat{
+    /* background-color: #ff305b; */
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+.sec-4 .container .cat span{
+    margin: 15px ;
+    display: inline-block;
+}
+.sec-4 .container .pix div {
+    margin: 15px 0;
+    background-image: url(imgs/1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 270px;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+}
+.sec-4 .container .pix div:nth-child(2){
+    background-image: url(imgs/2.jpg);
+}
+.sec-4 .container .pix div:nth-child(3){
+    background-image: url(imgs/3.jpg);
+}
+.sec-4 .container .pix div:nth-child(4){
+    background-image: url(imgs/4.jpg);
+}
+.sec-4 .container .pix div:nth-child(5){
+    background-image: url(imgs/5.jpg);
+}
+.sec-4 .container .pix div:nth-child(6){
+    background-image: url(imgs/6.jpg);
+}
+.sec-4 .container .pix div:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: overlay;
+}
+.sec-4 .container .pix div img{
+    width: 100%;
+}
+
+.sec-5{
+    background-color: #eee;
+    padding: 50px 0;
+}
+.sec-5 .container .count div{
+    /* background-color: #ff305b; */
+    margin-bottom: 45px;
+    text-align: center;
+}
+.sec-5 .container .count div h3{
+    font-size: 25px;
+    font-weight: 700;
+}
+.sec-5 .container .count div p{
+    font-size: 14px;
+    font-weight: 500;
+}
+.sec-5 .container .count div i{
+    color: #ff305b;
+    font-size: 25px;
+    margin: 20px 0;
+}
+
+.sec-6{
+    padding: 40px 0;
+}
+.sec-6 .container h2{
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 32px;
+}
+.sec-6 .container .feed-back {
+    position: relative;
+    background-color: #eee;
+    overflow: hidden;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+.sec-6 .container .feed-back .triangle{
+    width: 300px;
+    height: 350px;
+    background-color: #ff305b;
+    position: absolute;
+    top: -225px;
+    left: -169px;
+    transform: rotate(142deg);
+}
+.sec-6 .container .feed-back .pic img{
+    margin: 15px auto;
+    display: block;
+    /* background-color: blue; */
+    width: 25%;
+    border-radius: 50%;
+}
+.sec-6 .container .feed-back .text h3{
+    font-size: 22px;
+    margin: 15px 0;
+}
+.sec-6 .container .feed-back .text h5{
+    margin: 15px 0;
+    color: #555555;
+}
+.sec-6 .container .feed-back .text p{
+    line-height: 25px;
+    color: #555555;
+    margin-bottom: 20px;
+}
+.sec-6 .container .feed-back .text i{
+    color: #f1c30d; 
+}
+.sec-6 .container .box{
+    width: 50px;
+    margin: 0 auto 40px;
+
+}
+.sec-6 .container .box .on{
+    width: 25px;
+    height: 10px;
+    background-color: #ff305b;
+    border-radius: 10px;
+    display: inline-block;
+}
+.sec-6 .container .box .off{
+    width: 10px;
+    height: 10px;
+    border: #ff305b solid 1px;
+    border-radius: 50%;
+    text-align: center;
+    display: inline-block;
+}
+
+.sec-7 {
+    background-color: #eee;
+    padding: 30px 0;
+
+}
+.sec-7 .container h2{
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.sec-7 .parent{
+    /* background-color: #ff305b; */
+    padding: 15px 0;
+}
+.sec-7 .container .parent .child{
+    margin-bottom: 15px;
+    background-color: white;
+    padding-bottom: 20px;
+    line-height: 25px;
+}
+.sec-7 .container .parent .child img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.sec-7 .container .parent .child h3{
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+.sec-7 .container .parent .child p{
+    margin-bottom: 10px;
+    color: #555555;
+    padding-left: 10px;
+}
+.sec-7 .container .parent .child iframe{
+    width: 100%;
+    height: 55%;
+    margin-bottom: 10px;
+}
+.sec-7 .container .parent .child a{
+    text-decoration: none;
+    color: #555555;
+    font-size: 14px;
+    padding-left: 10px;
+}
+
+.sec-8{
+    padding: 40px 0;
+}
+.sec-8 .container h2{
+    font-size: 32px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.sec-8 .container form input {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.sec-8 .container form textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.sec-8 .container form button{
+    background-color: #ff305b;
+    border: none;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+}
+
+.sec-9{
+    padding: 40px;
+    background-color: #333333;
+}
+.sec-9 .container .icons{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.sec-9 .container .icons span{
+    margin-right: 15px;
+    color: white;
+}
+.sec-9 .container .copy-rights{
+    text-align: center;
+    color: white;
+    font-size: 16px;
+}
+.sec-9 .container .copy-rights span{
+    color: #ff305b;
+}
+
+
+
+
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {  
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {  
+	.container {
+		width: 720px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+    .sec-1 .container .nav h2{
+        width: 10%;
+        float: left;
+    }
+    .sec-1 .container .nav .links{
+        width: 65%;
+        float: right;
+        padding-top: 10px;
+        font-size: 16px;
+    }
+
+    .sec-2 .container .pic{
+        width: 46%;
+        float: left;
+        margin-right: 10px;
+    }
+    .sec-2 .container .text{
+        width: 51.60%;
+        float: right;
+        /* background-color: aqua; */
+    }
+    .sec-2 .container .text .up p{
+        margin: 0;
+        padding-bottom: 20px;
+    
+    }
+    .sec-2 .container .text .down p{
+        width: 48%;
+        /* background-color: #f1c30d; */
+        display: inline-block;
+        font-size: 14px;
+        margin: 0;
+    }
+
+    .sec-3 .container .serv div{
+        width: 50%;
+        float: left;
+        margin: 0 auto;
+        /* background-color: blueviolet; */
+    }
+
+    .sec-4 .container .pix div{
+        width: 45%;
+        float: left;
+        margin: 10px 15px;
+    }
+
+    .sec-5 .container .count div{
+        width: 25%;
+        float: left;
+        margin: 0;
+    }
+
+    .sec-6 .container .feed-back{
+        padding: 30px 15px ;
+    }
+    .sec-6 .container .feed-back .pic{
+        width: 20%;
+        float: left;
+        margin-right: 15px;
+    }
+    .sec-6 .container .feed-back .pic img{
+        width: 80%;
+        position: relative;
+        z-index: 100000;
+        
+    }
+    .sec-6 .container .feed-back .text{
+        width: 75%;
+        float: left;
+    }
+
+    .sec-7 .container .parent .child{
+        width: 32%;
+        float: left;
+        margin: 0 4px;
+    }
+    .sec-7 .container .parent .child iframe{
+    
+        width: 100%;
+        height: 129px;
+    }
+
+    .sec-8 .container form :nth-child(1){
+        float: left;
+        width: 48%;
+    }
+
+    .sec-8 .container form :nth-child(2){
+        width: 48%;
+        float: right;
+    }
+    
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+	.container {
+		width: 920px;
+	}
+
+    .sec-1 .container .nav .links{
+        width: 50%;
+    }
+
+    .sec-2 .container{
+        position: relative;
+    }
+    .sec-2 .container .shadow{
+        position: absolute;
+        left: 0;
+        border: 10px solid #333333;
+        border-radius: 10px;
+        width: 35%;
+        height: 80%;
+    }
+    .sec-2 .container .pic{
+        transform: translateX(30px) translateY(30px);
+        width: 35%;
+    }
+    .sec-2 .container .text{
+        width: 55%;
+        line-height: 30px;
+    }
+
+    .sec-3 .container .serv div{
+        width: 25%;
+        float: left;
+    }
+    
+
+    .sec-4 .container .pix div{
+        width: 31.33%;
+        float: left;
+        margin: 5px;
+    }
+
+    .sec-6 .container .feed-back{
+        width: 70%;
+        margin: auto;
+    }
+
+    .sec-7 .container .parent .child{
+        width: 30%;
+        float: left;
+        margin: 0 15px;
+    }
+    .sec-7 .container .parent .child iframe{
+        height: 155px;
+    }
+
+    .sec-8 .container form{
+        width: 70%;
+        margin: auto;
+    }
+
+
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+	.container {
+		width: 1140px;
+	}
+    .sec-1 .container .content h1{
+        font-size: 60px;
+    }
+    .sec-1 .container .content p{
+        font-size: 25px;
+        font-weight: 300;
+    }
+    .sec-1 .container .nav .links{
+        width: 41%;
+    }
+
+    .sec-2 .container .text .down p{
+        font-size: 16px;
+        padding: 15px 0;
+    }
+    .sec-2 .container .shadow{
+        width: 35%;
+        height: 97%;
+    }
+
+    .sec-7 .container .parent .child iframe{
+        height: 192px;
+        
+    }
+    .sec-7 .container .parent .child{
+        margin: 0 19px;
+    }
+}
+@media (min-width: 1400px) {  
+	.container {
+		width: 1340px;
+	}
+}
